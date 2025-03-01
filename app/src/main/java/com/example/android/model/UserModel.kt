@@ -8,6 +8,8 @@ data class UserModel (
     var firstname : String = "",
     var lastname : String = "",
     var email : String = "",
+    var imageName : String = "",
+    var imageUrl : String = ""
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
